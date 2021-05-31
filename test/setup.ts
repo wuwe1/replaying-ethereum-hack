@@ -1,6 +1,7 @@
-import chai, { expect } from 'chai'
-import { solidity } from 'ethereum-waffle'
+import chai, { expect } from "chai";
+import { waffle } from "hardhat";
+const { solidity } = waffle;
 
-chai.use(solidity)
+chai.use(solidity);
 
-export { expect }
+export { expect };
