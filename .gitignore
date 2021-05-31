@@ -1,0 +1,16 @@
+# Packages
+node_modules/
+
+# Env
+.env
+
+# Hardhat build outputs
+artifacts/
+cache/
+
+# IDE & Editor
+.vscode
+.idea
+
+# Mac
+.DS_Store
