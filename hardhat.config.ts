@@ -4,9 +4,9 @@ import { HardhatUserConfig } from "hardhat/config";
 import "@nomiclabs/hardhat-ethers";
 import "@nomiclabs/hardhat-waffle";
 
-const { ARCHIVE_URL } = process.env;
+const { ALCHEMY_API_KEY } = process.env;
 
-if (!ARCHIVE_URL)
+if (!ALCHEMY_API_KEY)
   throw new Error(
     `ARCHIVE_URL env var not set. Copy .env.template to .env and set the env var`
   );
