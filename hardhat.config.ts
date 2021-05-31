@@ -26,7 +26,7 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       forking: {
-        url: ARCHIVE_URL,
+        url: ALCHEMY_API_KEY,
         enabled: process.env.FORKING === "true",
         // blockNumber:
       },
