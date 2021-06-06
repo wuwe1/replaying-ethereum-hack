@@ -30,8 +30,6 @@ const config: HardhatUserConfig = {
         enabled: process.env.FORKING === "true",
         // blockNumber:
       },
-      live: false,
-      tags: ["local", "test"],
     },
     mainnet: {
       url: `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
@@ -43,12 +41,8 @@ const config: HardhatUserConfig = {
       url: "https://bsc-dataseed.binance.org",
       accounts,
       chainId: 56,
-      live: true,
     },
-    localhost: {
-      live: false,
-      tags: ["local"],
-    },
+    localhost: {},
   },
 };
 
