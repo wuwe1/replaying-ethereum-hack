@@ -3,6 +3,7 @@ import { HardhatUserConfig } from "hardhat/config";
 
 import "@nomiclabs/hardhat-ethers";
 import "@nomiclabs/hardhat-waffle";
+import "./tasks";
 
 const { ALCHEMY_API_KEY } = process.env;
 
@@ -21,7 +22,7 @@ const accounts = {
 
 const config: HardhatUserConfig = {
   solidity: {
-    compilers: [{ version: "0.8.3" }],
+    compilers: [{ version: "0.4.11" }, { version: "0.8.4" }],
   },
   networks: {
     hardhat: {
@@ -43,6 +44,9 @@ const config: HardhatUserConfig = {
       chainId: 56,
     },
     localhost: {},
+  },
+  mocha: {
+    timeout: 300 * 1e3,
   },
 };
 

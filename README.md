@@ -1,9 +1,3 @@
-## hardhat-ts-template
+## replaying-ethereum-hack
 
-```bash
-npm install --save-dev hardhat ethereum-waffle chai ethers
-npm install --save-dev dotenv
-npm install --save-dev ts-node typescript
-npm install --save-dev chai @types/node @types/mocha @types/chai
-npm install --save-dev @nomiclabs/hardhat-ethers @nomiclabs/hardhat-waffle
-```
+inspired by [cmichel](https://github.com/MrToph/replaying-ethereum-hacks)

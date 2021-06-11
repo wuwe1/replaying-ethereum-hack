@@ -1,5 +1,4 @@
-import hre, { ethers } from "hardhat";
-import { task } from "hardhat/config";
+import { ethers } from "hardhat";
 import "@nomiclabs/hardhat-waffle";
 
 async function main() {
