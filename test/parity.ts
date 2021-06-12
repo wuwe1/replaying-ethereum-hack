@@ -10,7 +10,7 @@ let wallet: Contract;
 let walletLib: Contract;
 let tx: ContractTransaction;
 
-beforeEach(async () => {
+before(async () => {
   await forkFrom(4501753);
   [attacker] = await ethers.getSigners();
 

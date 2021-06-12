@@ -25,7 +25,7 @@ let attacker: Contract;
 let attackerEOA: Signer;
 let tx: ContractTransaction;
 
-beforeEach(async () => {
+before(async () => {
   await forkFrom(11940499);
   const accounts = await ethers.getSigners();
   [attackerEOA] = accounts;
