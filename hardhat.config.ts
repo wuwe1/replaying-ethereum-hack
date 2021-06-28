@@ -22,7 +22,7 @@ const accounts = {
 
 const config: HardhatUserConfig = {
   solidity: {
-    compilers: [{ version: "0.4.11" }, { version: "0.8.4" }],
+    compilers: [{ version: "0.4.11" }, {version: '0.7.5'}, { version: "0.8.4" }],
   },
   networks: {
     hardhat: {
@@ -31,6 +31,7 @@ const config: HardhatUserConfig = {
         enabled: process.env.FORKING === "true",
         // blockNumber:
       },
+      blockGasLimit: 42000000,
     },
     mainnet: {
       url: `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
@@ -46,7 +47,7 @@ const config: HardhatUserConfig = {
     localhost: {},
   },
   mocha: {
-    timeout: 300 * 1e3,
+    timeout: 300 * 1e6,
   },
 };
 
